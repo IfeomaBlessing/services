@@ -1,0 +1,118 @@
+.heroSection{
+    width:100%;
+    height:100vh;
+    position: relative;
+    overflow: hidden;
+}
+.heroWrapper{
+    width:100%;
+    height:100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.heroSlide{
+    position:absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.current{
+    z-index:1;
+   width: 100%;
+   height:100%;
+}
+.bgImages{
+    top: 0;
+    left:0;
+    position:absolute;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    /* background-position:center;
+    background-size: cover; */
+}
+.hero-overlay{
+    position: absolute;
+    background: linear-gradient(0deg,transparent,rgba(68, 75, 46, 0.7),
+    rgba(188, 237, 90, 0.1));
+    width: 100%;
+    height:100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+.hero-content{
+    z-index:10;
+    text-transform: capitalize;
+    width:60%;
+    position:absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+    padding:1rem;
+    text-align:left;
+    animation:animateContent 1s ease-in-out 1 forwards;
+}   
+
+@keyframes animateContent{
+    0%{
+        opacity: 0;
+        transform:scale(1.5);
+    }
+}
+.hero-content h1{
+    color: white;
+    font-size:3rem;
+}
+.hero-content p{
+    margin:0.6rem 0;
+    color:white;
+}
+.sliderButtons{
+  position: absolute;
+  bottom: 20px;
+  right:50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select:none;
+  z-index: 10;
+}
+.arrowIcon{
+    margin-right:1rem;
+    width: 1rem;
+    height: 1rem;
+    background:rgb(82, 9, 9);
+    color:white;
+    padding:0.4rem;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.arrowIcon:hover{
+    background:white;
+    color:rgb(82, 9, 9) ;
+}
+
+@media screen and (max-width:769px) { 
+    .hero-content{
+        z-index:10;
+        text-transform: capitalize;
+        width:100%;
+        position:absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-30%, -50%);
+        padding:1rem;
+        text-align:center;
+    
+    }
+ }

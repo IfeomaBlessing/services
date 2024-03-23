@@ -1,0 +1,24 @@
+.info{
+    display:flex;
+    align-items:flex-start;
+    justify-content: space-around;
+    margin-bottom:2rem;
+}
+
+.left h2{
+    margin:1rem 0;
+}
+.co{
+    display:flex;
+    align-items: center;
+    margin-bottom:2rem;
+}
+.bg{
+    height:40vh;
+    width: 100%;
+}
+.bg img{
+    height: 100%;
+    width:100%;
+    border-radius:5px;
+}

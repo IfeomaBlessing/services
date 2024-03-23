@@ -1,0 +1,37 @@
+.footer{
+    background:rgb(82, 9, 9);
+    /* background:rgb(2, 52, 59); */
+    padding:60px 10%;
+    text-align: center;
+}
+.footer h3{
+    margin-bottom:1.5rem;
+    color:white;
+}
+.footer-menu{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.foot-link{
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    padding:8px 2rem;
+    cursor: pointer;
+    
+}
+hr{
+    width:100%;
+    height:1px;
+    background: white;
+   margin-top:0.8rem;
+}
+h6{
+    margin-top:0.8rem;
+}
+.foot{
+    color:rgb(239, 192, 104);
+}
